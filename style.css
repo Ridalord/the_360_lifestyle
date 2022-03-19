@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    size: 100%;
+    color: hsl(0, 4%, 84%);
+    font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span {
+    color: hsl(214, 10%, 43%);
+}
+span.white {
+    color: hsl(0, 4%, 84%);
+}
+body section.top {
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 664px;
+}
+div.wrapper {
+    padding: 20px 10%;
+    height: 624px;
+    background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    color: inherit;
+    list-style: none;
+}
+nav ul li {
+    margin-top: auto;
+    margin-left: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+nav ul li.blog_name {
+    margin-right: auto;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: hsl(215, 51%, 70%);
+    margin-left: 0;
+}
+li.drpdwn {
+    display: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li a.selected, nav ul li.links a:hover {
+    color: hsl(214, 10%, 43%);
+    border-bottom: 2px solid hsl(0, 4%, 84%);
+    transform: scale(1.2);
+    transition: border 1.5s ease-out, color 1s ease-out, margin 1s;
+}
+
+
+div.note {
+    margin-top: 19%;
+    line-height: 1;
+}
+div.note h1 {
+    font-size: 7em;
+    color: hsl(215, 51%, 70%);
+    line-height: 125px;
+}
+div.note p {
+    width: 50%;
+    line-height: 1.6;
+}
+button.arrow {
+    width: fit-content;
+    margin: 3% 0 0 10%;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    animation: arrow-movement 1s infinite;
+}
+button.arrow:hover .down {
+    animation: arrow-movement 1s ease-in-out ;
+}
+@keyframes arrow-movement {
+    0% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(10px);}
+    80% {-webkit-transform: translateY(-10px);}
+    100% {-webkit-transform: translateY(0);}
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 680px) {
+    li.links {
+        display: none;
+    }
+    li.drpdwn {
+        display: block;
+    }
+    li.drpdwn a img {
+        width: 20px;
+    }
+    div.note h1 {
+        font-size: 2.5em;
+        line-height: 1;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
