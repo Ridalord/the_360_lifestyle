@@ -359,6 +359,9 @@ section.subscribe form input.sbmt {
     .content ul, .col-2-1 a .content ul {
         margin-top: 65%;
     }
+    section.subscribe form h1 {
+        font-size: 1.1em;
+    }
 }
 
 
