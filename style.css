@@ -7,6 +7,13 @@ body {
     color: hsl(0, 4%, 84%);
     font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body.others {
+    padding: 20px 10%;
+    background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
+}
+a {
+    text-decoration: none;
+}
 span {
     color: hsl(214, 10%, 43%);
 }
@@ -43,6 +50,7 @@ nav ul li.blog_name {
     font-weight: 600;
     color: hsl(215, 51%, 70%);
     margin-left: 0;
+    line-height: 20px;
 }
 li.drpdwn {
     display: none;
@@ -54,8 +62,7 @@ nav ul li a {
 nav ul li a.selected, nav ul li.links a:hover {
     color: hsl(214, 10%, 43%);
     border-bottom: 2px solid hsl(0, 4%, 84%);
-    transform: scale(1.2);
-    transition: border 1.5s ease-out, color 1s ease-out, margin 1s;
+    transition: border 1s ease-in-out, color 1s ease-out;
 }
 
 
@@ -74,13 +81,161 @@ div.note p {
 }
 button.arrow {
     width: fit-content;
-    margin: 3% 0 0 10%;
+    margin-top: 3%;
     background-color: rgba(240, 248, 255, 0);
     border: none;
     animation: arrow-movement 1s infinite;
 }
 button.arrow:hover .down {
     animation: arrow-movement 1s ease-in-out ;
+}
+section.posts {
+    background-color: rgba(165, 109, 4, 0.289);
+    padding: 40px 10% 60px;
+    color: black;
+}
+div.container h1 {
+    margin-bottom: 40px;
+}
+div.wrap {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+}
+.col-1, .col-1-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 3px;
+}
+.col-1 {
+    background-image: url(./img/black24.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.col-2, .col-2-1 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-radius: 3px;    
+}
+.col-2 {
+    background-image: url(./img/black31.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.col-2-1 a .content ul {
+    margin-top: 109.9%;
+}
+.col-3, .col-3-1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 3px;
+}
+.col-3 {
+    background-image: url(./img/904470.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.col-4, .col-4-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 3px;
+}
+.col-4 {
+    background-image: url(./img/black18.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+.col-5, .col-5-1 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-radius: 3px;
+}
+.col-5 {
+    background-image: url(./img/black12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.col-1-1,.col-2-1, .col-3-1, .col-4-1, .col-5-1 {
+    background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.008), rgba(28, 26, 26, 0.672) 75% );
+}
+.content {
+    /* display: none; */
+    /* position: absolute; */
+    /* width: 24.2%;
+    height: 28.6%; */
+    color: white;
+    padding: 0 10px 10px 10px;
+    border-radius: 3px;
+}
+.content ul {
+    list-style: none;
+    display: flex;
+    margin-top: 43%;
+}
+.content ul li span {
+    color: white;
+    background-color: orangered;
+    font-size: 13px;
+    padding: 2px 8px;
+    margin-right: 20px;
+    border-radius: 3px;
+    /* font-weight: lighter; */
+}
+.content ul li p {
+    font-size: 10px;
+    padding: 4px 0;
+}
+.content h2 {
+    line-height: 2;
+    font-size: 16px;
+}
+section.subscribe {
+    width: 100%;
+    margin: 100px 0;
+}
+section.subscribe form {
+    width: 80%;
+    /* background-color: rgba(165, 109, 4, 0.179); */
+    background-color: rgba(214, 63, 88, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    padding: 65px 0;
+    border-radius: 3px;
+}
+section.subscribe form h1 {
+    font-size: 2.5em;
+    width: 60%;
+    margin: 0 auto 25px;
+}
+section.subscribe form p {
+    margin-bottom: 25px;
+}
+section.subscribe form input.txtbx {
+    height: 45px;
+    width: 220px;
+    border: none;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+section.subscribe form input.sbmt {
+    height: 45px;
+    border: none;
+    width: 100px;
+    background-color: hsl(214, 10%, 43%);
+    border-radius: 5px;
+    color: white;
 }
 @keyframes arrow-movement {
     0% {-webkit-transform: translateY(0);}
@@ -90,12 +245,66 @@ button.arrow:hover .down {
 }
 
 @media screen and (max-width: 980px) {
-
+    div.note h1 {
+        font-size: 5.3em;
+        line-height: 1.3;
+    }
+    div.note p {
+        width: 65%;
+    }
+    div.note {
+        margin-top: 25%;
+    }
 }
 
 @media screen and (max-width: 680px) {
+    body section.top {
+        height: 550px;
+    }
+    div.wrapper {
+        height: 510px;
+    }
     li.links {
         display: none;
+    }
+    nav ul li.blog_name {
+        margin-top: 3px;
+    }
+    ul.topnav.responsive {
+        position: relative;
+        flex-direction: column;
+    }
+    ul.topnav.responsive {
+        position: relative;
+        margin-left: auto;
+    }
+    ul.topnav.responsive li.links {
+        display: inline;
+        margin-left: 82%;
+        position: relative;
+    }
+    ul.topnav.responsive li.drpdwn{
+        position: absolute;
+        /* top: 2px; */
+        right: 0;
+    }
+    ul.topnav.responsive li.links a {
+        display: block;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+    }
+    ul.topnav.responsive li.links a.life {
+        top: 25px;
+    }
+    ul.topnav.responsive li.links a.trav {
+        top: 50px;
+    }
+    ul.topnav.responsive li.links a.about {
+        top: 75px;
+    }
+    ul.topnav.responsive li.links a.contact {
+        top: 100px;
     }
     li.drpdwn {
         display: block;
@@ -103,11 +312,53 @@ button.arrow:hover .down {
     li.drpdwn a img {
         width: 20px;
     }
-    div.note h1 {
-        font-size: 2.5em;
-        line-height: 1;
+    div.note {
+        margin-top: 48%;
     }
-
+    div.note h1 {
+        font-size: 2.7em;
+        line-height: 1.3;
+    }
+    div.note p {
+        width: 90%;
+        line-height: 1.6;
+        font-size: 13px;
+    }
+    button.arrow {
+        margin-top: 7%;
+    }
+    div.wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 280px);
+    }
+    section.posts {
+        padding: 40px 15% 60px;
+    }
+    .col-1, .col-1-1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .col-2, .col-2-1 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .col-3, .col-3-1 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .col-4, .col-4-1 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .col-5, .col-5-1 {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+    .content ul, .col-2-1 a .content ul {
+        margin-top: 65%;
+    }
 }
 
 

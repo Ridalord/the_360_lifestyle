@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="styleSheet" type="text/css" href="style.css">
+  <script type="text/JavaScript" src="./js/script.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <section class="top">
         <div class="wrapper">
             <nav>
-                <ul>
+                <ul class="topnav" id="dropdownClick">
                     <li class="blog_name">
                         <a href="index.html">m<span>ee</span>nah's<span>.</span></a>
                     </li>
@@ -22,40 +23,139 @@
                         <a class="selected" href="index.html">Home</a>
                     </li>
                     <li class="links">
-                        <a href="lifestyle.html">Lifestyle</a>
+                        <a class="life" href="lifestyle.html">Lifestyle</a>
                     </li>
                     <li class="links">
-                        <a href="travel.html">Travel</a>
+                        <a class="trav" href="travel.html">Travel</a>
                     </li>
                     <li class="links">
-                        <a href="about.html">About</a>
+                        <a class="about" href="about.html">About</a>
                     </li>
                     <li class="links">
-                        <a href="contact.html">Contact</a>
+                        <a class="contact" href="contact.html">Contact</a>
                     </li>
                     <li class="drpdwn">
-                        <a href="#">
+                        <a href="javascript:void(0);" onclick="dropDown()">
                             <img src="./img/menu.svg">
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="note">
-                <p>Hello welcome to</p>
+                <p>Hello! Welcome to</p>
                 <h1>m<span>ee</span>nah's<span>.</span> <span class="white">blog</span></h1>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there lived the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            </div>
-            <button class="arrow">
-                <a href="#posts">
-                    <img class="down" src=./img/arrow.png>
-                </a>
-            </button>
+                <button class="arrow">
+                    <a href="#posts">
+                        <img class="down" src=./img/arrow.png>
+                    </a>
+                </button>
+            </div>  
         </div>
     </section>
     <section class="posts" id="posts">
-        <div>
-            
+        <div class="container">
+            <h1>Recent Posts</h1>
+            <div class="wrap">
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-1-1">
+                    <a href="#">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>LIFESTYLE</span>
+                                </li>
+                                <li>
+                                    <p>March 27,2022</p>
+                                </li>
+                            </ul>
+                            <h2>The 20 Biggest Fintech in America 2022</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-2-1">
+                    <a href="#">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>TRAVEL</span>
+                                </li>
+                                <li>
+                                    <p>March 27,2022</p>
+                                </li>
+                            </ul>
+                            <h2>The 20 Biggest Fintech in America 2022</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-3">
+                    
+                </div>
+                <div class="col-3-1">
+                    <a href="#">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>LIFESTYLE</span>
+                                </li>
+                                <li>
+                                    <p>March 27,2022</p>
+                                </li>
+                            </ul>
+                            <h2>The 20 Biggest Fintech in America 2022</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    
+                </div>
+                <div class="col-4-1">
+                    <a href="#">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>LIFESTYLE</span>
+                                </li>
+                                <li>
+                                    <p>March 27,2022</p>
+                                </li>
+                            </ul>
+                            <h2>The 20 Biggest Fintech in America 2022</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5">
+                    
+                </div>
+                <div class="col-5-1">
+                    <a href="#">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <span>LIFESTYLE</span>
+                                </li>
+                                <li>
+                                    <p>March 27,2022</p>
+                                </li>
+                            </ul>
+                            <h2>The 20 Biggest Fintech in America 2022</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="subscribe">
+        <form action="http://www.meenah's.com/feedback.aspx" method="post" >
+            <h1>Do you want to receive our articles as it drops?</h1>
+            <p>Type in your email address to subscribe.</p>
+            <input class="txtbx" type="mail" placeholder="Enter email address" ><input class="sbmt" type="submit" value="Subscribe">
+        </form>
     </section>
     <footer>
 
