@@ -238,6 +238,13 @@ section.subscribe form input.sbmt {
     border-radius: 5px;
     color: white;
 }
+footer {
+    background-color: hsl(214, 10%, 43%);
+}
+footer div {
+    width: 100%;
+    display: flex;
+}
 @keyframes arrow-movement {
     0% {-webkit-transform: translateY(0);}
     50% {-webkit-transform: translateY(10px);}
@@ -289,6 +296,15 @@ section.subscribe form input.sbmt {
         /* top: 2px; */
         right: 0;
     }
+    #overlay {
+        background-color: rgba(44, 43, 43, 0.618);
+        width: 30%;
+        height: 200px;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        text-align: center;
+    }
     ul.topnav.responsive li.links a {
         display: block;
         width: fit-content;
@@ -314,7 +330,7 @@ section.subscribe form input.sbmt {
         width: 20px;
     }
     div.note {
-        margin-top: 48%;
+        margin-top: 55%;
     }
     div.note h1 {
         font-size: 2.5em;
