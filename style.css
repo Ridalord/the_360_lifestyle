@@ -449,6 +449,43 @@ div.top_footer {
         height: 35px;
         width: 70px;
     }
+    footer {
+        padding: 15px 3% 2px;
+        width: 94%;
+    }
+    div.top_footer {
+        margin: 0 0 30px;
+        font-size: 0.9em;
+        display: block;
+    }
+    .lst1 .blog_name, .lst1 .us, .lst2, .back {
+        text-align: center;
+    }
+    .lst1 .us p{
+        width: 100%;
+    }
+    .lst2 {
+        margin-left: 0;
+    }
+    .lst2 h1 {
+        font-size: 1.5em;
+    }
+    .copyright .contact {
+        margin: 0 28%;
+    }
+    .copyright {
+        display: block;
+    }
+    .copyright div .copy {
+        margin-left: 0;
+    }
+    .copyright div p {
+        font-size: 12px;
+        display: inline;
+    }
+    .copyright div .tc {
+        margin-left: 35px;
+    }
 }
 
 
