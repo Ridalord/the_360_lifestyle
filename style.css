@@ -274,12 +274,18 @@ div.top_footer {
 .back {
     margin: 20px 50px;
 }
-.copyright p {
-    margin: auto 0;
+.copyright  {
+    display: flex;
 }
-.copyright .contact {
+.copyright, .contact, .copyright div {
     list-style: none;
     display: flex;
+}
+.copyright div {
+    width: 100%;
+}
+.copyright div p {
+    line-height: 3;
 }
 .copyright .contact li {
     margin-right: 5px;
@@ -288,12 +294,12 @@ div.top_footer {
     width: 35px;
     border-radius: 50%;
 }
-.copyright .copy {
+.copyright div .copy {
     margin-left: 30%;
 }
-.copyright .tc, .tc {
+.copyright div .tc {
     margin-left: auto;
-    font-size: 13px;
+    font-size: 12px;
 }
 @keyframes arrow-movement {
     0% {-webkit-transform: translateY(0);}
@@ -368,10 +374,10 @@ div.top_footer {
     ul.topnav.responsive li.links a.trav {
         top: 50px;
     }
-    ul.topnav.responsive li.links a.about {
+    ul.topnav.responsive li.links a.products {
         top: 75px;
     }
-    ul.topnav.responsive li.links a.contact {
+    ul.topnav.responsive li.links a.about {
         top: 100px;
     }
     li.drpdwn {
