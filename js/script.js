@@ -1,6 +1,6 @@
-var $overlay = $("<div id='overlay'></div > ");
+// var $overlay = $("<div id='overlay'></div > ");
 // $("ul.topnav").append($overlay)
-$($overlay).hide();
+$("#overlay").hide();
 function dropDown() {
     var x = document.getElementById("dropdownClick");
     if (x.className === "topnav") {
@@ -9,7 +9,7 @@ function dropDown() {
     else {
         x.className = "topnav";
     }
-    $($overlay).show();
+    $("#overlay").show();
 }
 // $($overlay).click(function () {
 //     $overlay.hide(); 
