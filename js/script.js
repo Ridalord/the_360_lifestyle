@@ -11,6 +11,9 @@ function dropDown() {
     }
     $("#overlay").show();
 }
-// $($overlay).click(function () {
-//     $overlay.hide(); 
-// });
+$("#overlay").click(function () {
+    $("#overlay").hide(); 
+});
+$("body").click(function () {
+    $("#overlay").hide();
+});
