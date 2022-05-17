@@ -406,6 +406,7 @@ div.top_footer {
         position: absolute;
         top: 40px;
         right: 0;
+        display: none;
         /* text-align: center; */
     }
     ul.topnav.responsive li.links a {
