@@ -17,6 +17,7 @@ function dropDown() {
     
 }
 
-// $("body").click(function () {
+// $("div.note").click(function () {
 //     $("#overlay").hide();
+//     dropDown();
 // });
