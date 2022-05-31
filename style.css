@@ -8,7 +8,6 @@ body {
     font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body.others {
-    /* padding: 20px 10%; */
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
 }
 a {
@@ -29,10 +28,10 @@ body section.top {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 664px;
+    height: 738px;
 }
 div.wrapper {
-    padding: 20px 10%;
+    padding: 0px 10% 20px;
     height: auto;
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
 }
@@ -41,20 +40,30 @@ nav ul {
     width: 100%;
     color: inherit;
     list-style: none;
+    height: 50px;
 }
 nav ul li {
     margin-top: auto;
     margin-left: 25px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 600;
+}
+.others .wrapper nav ul li {
+    font-size: 1.09em;
 }
 .blog_name {
     margin-right: auto;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: hsl(215, 51%, 70%);
+    /* color: hsl(215, 51%, 70%); */
     margin-left: 0;
-    line-height: 20px;
+    /* line-height: 20px; */
+}
+.blog_name a img {
+    height: 100px;
+    width: 150px;
+}
+.others .wrapper nav ul .blog_name a img {
+    height: 90px;
+    width: 135px;
 }
 li.drpdwn {
     display: none;
@@ -87,7 +96,7 @@ div.note p {
 button.arrow {
     width: fit-content;
     margin-top: 3%;
-    margin-bottom: 70px;
+    margin-bottom: 98px;
     background-color: rgba(240, 248, 255, 0);
     border: none;
     animation: arrow-movement 1s infinite;
@@ -135,7 +144,7 @@ div.wrap {
     border-radius: 5px;
 }
 .col-2-1 a .content ul {
-    padding-top: 110%;
+    padding-top: 99%;
 }
 .col-3, .col-3-1 {
     grid-column: 3/4;
@@ -189,7 +198,7 @@ div.wrap {
     list-style: none;
     display: flex;
     /* margin-top: 43%; */
-    padding-top: 43%;
+    padding-top: 39%;
 }
 .content ul li span {
     color: white;
@@ -229,12 +238,15 @@ section.subscribe form h1 {
 section.subscribe form p {
     margin-bottom: 25px;
 }
-section.subscribe form input.txtbx {
+section.subscribe form .txtbx {
     height: 45px;
     width: 220px;
     border: none;
     padding-left: 15px;
     border-radius: 3px;
+}
+.txtbx:focus {
+    outline: none;
 }
 section.subscribe form input.sbmt {
     height: 45px;
@@ -254,10 +266,14 @@ footer {
     display: flex;
     font-size: 13px;
 }
-.lst1 .blog_name a {
-    color: hsl(215, 51%, 70%);
-    font-size: 1.3em;
-    line-height: 2;
+.lst1 .blog_name div {
+    width: 150px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+.lst1 .blog_name div a img {
+    /* height: 85px; */
+    width: 100%;
 }
 div.top_footer {
     margin: 0 20% 30px;
@@ -267,14 +283,15 @@ div.top_footer {
     width: 400px;
 }
 .lst2 {
-    margin-left: 70px;
+    margin-left: 18%;
+    margin-top: 37px;
 }
 .lst2 h1 {
     line-height: 45px;
     font-size: 1.9em;
 }
 .back {
-    margin: 20px 50px;
+    margin: 57px 0 0 15%;
 }
 .copyright  {
     display: flex;
@@ -353,6 +370,17 @@ div.top_footer {
     100% {-webkit-transform: translateY(0);}
 }
 
+#overlay2 {
+    background-color: rgba(0, 0, 0, 0.618);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
 @media screen and (max-width: 980px) {
     div.note h1 {
         font-size: 5.3em;
@@ -368,18 +396,31 @@ div.top_footer {
 
 @media screen and (max-width: 680px) {
     body section.top {
-        height: 550px;
+        height: auto;
     }
     div.wrapper {
         height: auto;
-        padding: 20px 8%;
+        padding: 0px 8% 20px;
     }
     li.links {
         display: none;
     }
-    nav ul li.blog_name {
-        margin-top: 3px;
+    .blog_name {
+        line-height: 0px;
     }
+    .blog_name a img {
+        height: 70px;
+        width: 120px;
+        display: absolute;
+    }
+
+    .others .wrapper nav ul .blog_name a img {
+        height: 70px;
+        width: 120px;
+    }
+    /* nav ul li.blog_name {
+        margin-top: 3px;
+    } */
     ul.topnav.responsive {
         position: relative;
         flex-direction: column;
@@ -395,7 +436,7 @@ div.top_footer {
     }
     ul.topnav.responsive li.drpdwn{
         position: absolute;
-        /* top: 2px; */
+        top: 25px;
         right: 0;
     }
     #overlay {
@@ -404,7 +445,7 @@ div.top_footer {
         padding: 5px;
         height: 800px;
         position: absolute;
-        top: 40px;
+        top: 45px;
         right: 0;
         display: none;
         /* text-align: center; */
@@ -414,18 +455,34 @@ div.top_footer {
         width: fit-content;
         position: absolute;
         right: 0;
+        top: -15px;
     }
     ul.topnav.responsive li.links a.life {
-        top: 25px;
+        top: 20px;
     }
     ul.topnav.responsive li.links a.trav {
-        top: 50px;
+        top: 45px;
     }
     ul.topnav.responsive li.links a.products {
-        top: 75px;
+        top: 70px;
     }
     ul.topnav.responsive li.links a.about {
-        top: 100px;
+        top: 95px;
+    }
+    .others ul.topnav.responsive li.links a.life {
+        top: 10px;
+    }
+
+    .others ul.topnav.responsive li.links a.trav {
+        top: 35px;
+    }
+
+    .others ul.topnav.responsive li.links a.products {
+        top: 62px;
+    }
+
+    .others ul.topnav.responsive li.links a.about {
+        top: 87px;
     }
     li.drpdwn {
         display: block;
@@ -511,7 +568,11 @@ div.top_footer {
         font-size: 0.9em;
         display: block;
     }
-    .lst1 .blog_name, .lst1 .us, .lst2, .back {
+    .lst1 .blog_name div {
+        margin: 0 auto;
+        width: 90px;
+    }
+    .lst1 .us, .lst2, .back {
         text-align: center;
     }
     .lst1 .us p{
@@ -524,10 +585,14 @@ div.top_footer {
         font-size: 1.5em;
     }
     .copyright .contact {
-        margin: 0 28%;
+        margin: 0 29%;
     }
     .copyright {
         display: block;
+        width: 100%;
+    }
+    .copyright div {
+        width: 100%;
     }
     .copyright div .copy {
         margin-left: 0;
@@ -537,7 +602,7 @@ div.top_footer {
         display: inline;
     }
     .copyright div .tc {
-        margin-left: 25px;
+        margin-left: auto;
     }
     .lifestyle_posts {
         display: block;
@@ -545,12 +610,18 @@ div.top_footer {
     }
     .post1 a img {
         border-radius: 5px;
+        /* height: 300px; */
     }
     .post1  {
         display: grid;
         font-size: 0.6em;
         /* float: left; */
         grid-template-columns: 1.2fr 2fr;
+        height: 83px;
+    }
+    .details {
+        padding: 0px;
+        margin: 5px;
     }
 }
 
