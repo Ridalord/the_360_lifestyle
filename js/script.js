@@ -1,6 +1,4 @@
-// var $overlay = $("<div id='overlay'></div > ");
-// $("ul.topnav").append($overlay)
-$("#overlay").hide();
+document.getElementById('overlay').style.display = 'none';
 function dropDown() {
     var x = document.getElementById("dropdownClick");
     if (x.className === "topnav") {
@@ -9,9 +7,9 @@ function dropDown() {
     }
     else {
         x.className = "topnav";
-        $("#overlay").hide();
-        $("#overlay").click(function () {
-            $("#overlay").hide();
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('overlay').addEventListener('click', function () {
+                    document.getElementById('overlay').style.display = 'none';
         });
     }
     
