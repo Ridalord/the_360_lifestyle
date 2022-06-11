@@ -53,9 +53,7 @@ nav ul li {
 }
 .blog_name {
     margin-right: auto;
-    /* color: hsl(215, 51%, 70%); */
     margin-left: 0;
-    /* line-height: 20px; */
 }
 .blog_name a img {
     height: 100px;
@@ -186,9 +184,6 @@ div.wrap {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.008), rgba(28, 26, 26, 0.672) 75% );
 }
 .content {
-    /* display: none; */
-    /* position: absolute; */
-    /* width: 24.2%; */
     height: 100%;
     color: white;
     padding: 0 10px 10px 10px;
@@ -197,7 +192,6 @@ div.wrap {
 .content ul {
     list-style: none;
     display: flex;
-    /* margin-top: 43%; */
     padding-top: 39%;
 }
 .content ul li span {
@@ -207,7 +201,6 @@ div.wrap {
     padding: 2px 8px;
     margin-right: 20px;
     border-radius: 3px;
-    /* font-weight: lighter; */
 }
 .content ul li p {
     font-size: 10px;
@@ -223,7 +216,6 @@ section.subscribe {
 }
 section.subscribe form {
     width: 80%;
-    /* background-color: rgba(165, 109, 4, 0.179); */
     background-color: rgba(214, 63, 88, 0.8);
     margin: 0 auto;
     text-align: center;
@@ -272,7 +264,6 @@ footer {
     margin-bottom: 5px;
 }
 .lst1 .blog_name div a img {
-    /* height: 85px; */
     width: 100%;
 }
 div.top_footer {
@@ -339,7 +330,6 @@ div.top_footer {
     padding: 5px;
 }
 .details h1 {
-    /* text-align: justify; */
     font-size: 1.2em;
 }
 .details ul {
@@ -364,9 +354,8 @@ div.top_footer {
     padding-top: 5px;
     margin-bottom: 3px;
 }
-.details p a.more {
+a.more {
     font-style: italic;
-    /* color: aqua; */
 }
 .wrap {
     height: auto;
@@ -390,11 +379,9 @@ div.top_footer {
     border-radius: 5px 5px 0 0;
 }
 .prod1-abt {
-    /* width: 82%; */
     margin: auto;
     text-align: center;
     padding: 0 13px 5px;
-    /* background-color: rgba(255, 255, 255, 0.363); */
     color: black;
 }
 .prod1-abt h1 {
@@ -411,6 +398,22 @@ div.top_footer {
 .prod1-abt a {
     color: white;
     padding: 10px 10px;
+}
+.aboutContainer {
+    margin: 4% 0 30px 0;
+}
+.aboutUs {
+    width: 60%;
+    margin: auto;
+}
+.aboutUs h1 {
+    font-size: 2em;
+    line-height: 2;
+}
+.aboutUs p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 @keyframes arrow-movement {
@@ -492,10 +495,8 @@ div.top_footer {
         padding: 5px;
         height: 1000px;
         position: absolute;
-        /* top: 45px; */
         right: 0;
         display: none;
-        /* text-align: center; */
     }
     ul.topnav.responsive li.links a {
         display: block;
@@ -668,12 +669,10 @@ div.top_footer {
     }
     .post1 a img {
         border-radius: 5px;
-        /* height: 300px; */
     }
     .post1  {
         display: grid;
         font-size: 0.6em;
-        /* float: left; */
         grid-template-columns: 1.2fr 2fr;
         height: 83px;
     }
@@ -684,7 +683,6 @@ div.top_footer {
     .product-1 {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        /* grid-template-rows: 100px; */
         margin-bottom: 10px;
         padding: 4px;
     }
@@ -699,6 +697,24 @@ div.top_footer {
     }
     .prod1-abt button {
         margin-top: 5px;
+    }
+    .aboutContainer {
+        margin: 5% 0 30px 0;
+    }
+
+    .aboutUs {
+        width: 90%;
+        margin: auto;
+    }
+
+    .aboutUs h1 {
+        font-size: 1.5em;
+        line-height: 2;
+    }
+
+    .aboutUs p {
+        font-size: 0.8em;
+        margin-bottom: 15px;
     }
 }
 
