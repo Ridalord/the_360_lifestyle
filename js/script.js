@@ -3,7 +3,7 @@ function dropDown() {
     var x = document.getElementById("dropdownClick");
     if (x.className === "topnav") {
         x.className += " responsive";
-        $("#overlay").show();
+        document.getElementById('overlay').style.display = 'block';
     }
     else {
         x.className = "topnav";
