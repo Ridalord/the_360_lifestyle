@@ -7,7 +7,7 @@ body {
     color: hsl(0, 4%, 84%);
     font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body.others {
+.others {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
 }
 a {
@@ -34,6 +34,9 @@ div.wrapper {
     padding: 0px 10% 20px;
     height: auto;
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
+}
+nav {
+    margin-bottom: 5%;
 }
 nav ul {
     display: flex;
@@ -106,6 +109,7 @@ section.posts {
     background-color: rgba(165, 109, 4, 0.289);
     padding: 40px 10% 60px;
     color: black;
+    display: block;
 }
 div.container h1 {
     margin-bottom: 40px;
@@ -121,6 +125,7 @@ div.wrap {
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 3px;
+    
 }
 .col-1 {
     background-image: url(./img/black24.jpg);
@@ -182,17 +187,15 @@ div.wrap {
 }
 .col-1-1,.col-2-1, .col-3-1, .col-4-1, .col-5-1 {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.008), rgba(28, 26, 26, 0.672) 75% );
+    overflow: hidden;
+    position: relative;
+    display: block;
 }
-.content {
-    height: 100%;
-    color: white;
-    padding: 0 10px 10px 10px;
-    border-radius: 3px;
-}
+
 .content ul {
     list-style: none;
     display: flex;
-    padding-top: 39%;
+    /* padding-top: 39%; */
 }
 .content ul li span {
     color: white;
@@ -207,8 +210,19 @@ div.wrap {
     padding: 4px 0;
 }
 .content h2 {
-    line-height: 2;
+    margin-top: 4px;
+    line-height: 1;
     font-size: 16px;
+}
+.content {
+    position: absolute;
+    /* width: 25%; */
+    /* bottom: 0; */
+    /* left: 0; */
+    color: white;
+    bottom: 0;
+    padding: 0 10px 10px 10px;
+    /* border-radius: 3px; */
 }
 section.subscribe {
     width: 100%;
@@ -245,7 +259,7 @@ section.subscribe form input.sbmt, .prod1-abt button {
     border: none;
     width: 100px;
     background-color: hsl(214, 10%, 43%);
-    border-radius: 5px;
+    border-radius: 0 3px 3px 0;
     color: white;
     cursor: pointer;
 }
@@ -362,11 +376,14 @@ a.more {
     height: auto;
     width: 100%;
 }
-.product {
+.product, .product-drugs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 5% 0 30px 0;
+    margin: 1% 0 30px 0;
     gap: 15px;
+}
+.prod_catgry {
+    color: hsl(215, 51%, 70%);
 }
 .product-1 {
     background-color: rgba(255, 255, 255, 0.363);
@@ -381,20 +398,22 @@ a.more {
 }
 .prod1-abt {
     margin: auto;
-    text-align: center;
     padding: 0 13px 5px;
     color: black;
+    text-align: center;
 }
 .prod1-abt h1 {
     font-size: 1.2em;
+    text-align: center;
 }
 .prod1-abt p {
     font-size: 0.9em;
+    text-align: justify;
 }
 .prod1-abt button {
     height: 30px;
     width: 80px;
-    margin-top: 5px;
+    margin: 5px auto 0; 
 }
 .prod1-abt a {
     color: white;
@@ -410,6 +429,7 @@ a.more {
 .aboutUs h1 {
     font-size: 2em;
     line-height: 2;
+    color: hsl(215, 51%, 70%);
 }
 .aboutUs p {
     font-size: 1.1em;
@@ -495,7 +515,7 @@ a.more {
     .details p {
         font-size: 0.6em;
     }
-    .product {
+    .product, .product-drugs {
         grid-template-columns: repeat(3, 1fr);
         margin: 5% 0 30px 0;
         gap: 15px;
@@ -724,12 +744,12 @@ a.more {
     .copyright div .tc {
         margin-left: auto;
     }
-    .lifestyle_posts, .product {
+    .lifestyle_posts, .product, .product-drugs {
         display: block;
-        margin-top: 20%;
     }
     .post1 a img {
         border-radius: 5px 0 0 5px;
+        height: 100%;
     }
     .post1  {
         display: grid;
@@ -758,21 +778,26 @@ a.more {
     .details p {
         font-size: 0.8em;
     }
+    .prod_catgry {
+        font-size: 1.8em;
+    }
     .product-1 {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
         margin-bottom: 10px;
         padding: 4px;
     }
     .prod1-img {
-        width: 60%;
+        width: 30%;
     }
     .prod1-abt h1 {
         font-size: 1.2em; 
     }
     .prod1-img img{
         display: block;
+        height: 100%;
+    }
+    .prod1-abt {
+        padding: 0 13px;
     }
     .prod1-abt button {
         margin-top: 5px;
