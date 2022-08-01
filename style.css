@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    size: 100%;
+    /* min-height: 100vh; */
     color: hsl(0, 4%, 84%);
     font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .others {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
+    /* min-height: inherit; */
 }
 a {
     text-decoration: none;
@@ -31,8 +33,8 @@ body section.top {
     height: 738px;
 }
 div.wrapper {
-    padding: 0px 10% 20px;
-    height: auto;
+    padding: 0px 10%;
+    min-height: 92vh;
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
 }
 nav {
@@ -257,8 +259,11 @@ section.subscribe form input.sbmt, .prod1-abt button {
     cursor: pointer;
 }
 footer {
+    /* position: absolute;
+    bottom: 0; */
     background-color: rgba(165, 109, 4, 0.7);
-    padding: 15px 5% 2px;
+    padding: 10px 5% 2px;
+    /* margin-top: -20px; */
     width: 90%;
     color: black;
 }
@@ -322,13 +327,17 @@ div.top_footer {
 .lifestyle_posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
     gap: 20px;
-    margin: 5% 0 30px 0;
+    margin: 5% 0 0px 0;
+    padding-bottom: 30px;
+    /* min-height: 100vh; */
 }
 .post1 {
     background-color: rgba(245, 245, 245, 0.241);
     border-radius: 5px;
     margin-top: 10px;
+    max-height: fit-content;
 }
 .post1 a img {
     width: 100%;
@@ -372,7 +381,8 @@ a.more {
 .product, .product-drugs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 1% 0 30px 0;
+    margin: 1% 0 0px 0;
+    padding-bottom: 30px;
     gap: 15px;
 }
 .prod_catgry {
@@ -413,7 +423,8 @@ a.more {
     padding: 10px 10px;
 }
 .aboutContainer {
-    margin: 4% 0 30px 0;
+    margin: 4% 0 0 0;
+    padding-bottom: 30px;
 }
 .aboutUs {
     width: 60%;
