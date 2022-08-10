@@ -6,7 +6,7 @@
 body {
     /* min-height: 100vh; */
     color: hsl(0, 4%, 84%);
-    font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 .others {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
@@ -122,25 +122,18 @@ div.wrap {
     border-radius: 3px;
     
 }
-.col-1 {
-    background-image: url(./img/IMG-20220720-WA0002.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.col-1 img, .col-2 img, .col-3 img, .col-4 img, .col-5 img {
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
+
 .col-2, .col-2-1 {
     grid-column: 2/3;
     grid-row: 1/3;
     border-radius: 3px;    
 }
-.col-2 {
-    background-image: url(./img/black31.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
+
 .col-2-1 a .content ul {
     padding-top: 99%;
 }
@@ -149,36 +142,16 @@ div.wrap {
     grid-row: 1/2;
     border-radius: 3px;
 }
-.col-3 {
-    background-image: url(./img/IMG-20220720-WA0003.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-}
+
 .col-4, .col-4-1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-radius: 3px;
-}
-.col-4 {
-    background-image: url(./img/IMG-20220720-WA0005.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 3px;
 }
 .col-5, .col-5-1 {
     grid-column: 3/4;
     grid-row: 2/3;
     border-radius: 3px;
-}
-.col-5 {
-    background-image: url(./img/IMG-20220720-WA0004.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 .col-1-1,.col-2-1, .col-3-1, .col-4-1, .col-5-1 {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.008), rgba(28, 26, 26, 0.672) 75% );
@@ -342,6 +315,7 @@ div.top_footer {
 .post1 a img {
     width: 100%;
     border-radius: 5px 5px 0 0;
+    height: 280px;
 }
 .details {
     padding: 5px;
@@ -1144,6 +1118,7 @@ q {
     .comment-form-input-container label {
         font-size: 13px;
     }
+    
 }
 
 
