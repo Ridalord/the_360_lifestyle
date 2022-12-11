@@ -795,7 +795,7 @@ q {
         width: 100%;
         padding: 5px;
         height: 1000px;
-        position: absolute;
+        position: fixed;
         right: 0;
         display: none;
     }
@@ -1015,7 +1015,7 @@ q {
     }
     .prod1-img img{
         display: block;
-        width: 80px;
+        width: 95px;
         height: 100%;
         border-radius: 5px;
     }
