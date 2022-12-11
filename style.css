@@ -895,7 +895,7 @@ q {
         font-size: 15px;
     }
     section.subscribe form {
-        padding: 45px 0;
+        padding: 45px 15px;
     }
     section.subscribe form h1 {
         font-size: 1.3em;
@@ -911,6 +911,7 @@ q {
     section.subscribe form input.sbmt {
         height: 35px;
         width: 70px;
+        border-radius: 5px;
     }
     footer {
         padding: 15px 3% 2px;
