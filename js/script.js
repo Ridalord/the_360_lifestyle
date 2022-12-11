@@ -15,19 +15,4 @@ function dropDown() {
     
 }
 
-// $("div.note").click(function () {
-//     $("#overlay").hide();
-//     dropDown();
-// });
 
-
-// var $overlay2 = $("<div id='overlay'></div>");
-// $("body").append($overlay2);
-// $("#overlay2").hide();
-// $("#tc a").click(function (event) {
-//     event.preventDefault();
-//     $($overlay2).show();
-// });
-// $overlay2.click(function () {
-//     $overlay2.hide();
-// })

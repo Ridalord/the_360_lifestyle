@@ -4,13 +4,11 @@
 }
 
 body {
-    /* min-height: 100vh; */
     color: hsl(0, 4%, 84%);
     font-family: 'Outfit', sans-serif;
 }
 .others {
     background: -webkit-linear-gradient(top right, rgba(165, 109, 4, 0.7), rgba(214, 63, 88, 0.8) 75% );
-    /* min-height: inherit; */
 }
 a {
     text-decoration: none;
@@ -76,7 +74,7 @@ nav ul li a.selected, nav ul li.links a:hover {
 
 
 div.note {
-    margin-top: 18%;
+    margin-top: 30vh;
     line-height: 1;
 }
 div.note h1 {
@@ -162,7 +160,6 @@ div.wrap {
 .content ul {
     list-style: none;
     display: flex;
-    /* padding-top: 39%; */
 }
 .content ul li span {
     color: white;
@@ -183,13 +180,9 @@ div.wrap {
 }
 .content {
     position: absolute;
-    /* width: 25%; */
-    /* bottom: 0; */
-    /* left: 0; */
     color: white;
     bottom: 0;
     padding: 0 10px 10px 10px;
-    /* border-radius: 3px; */
 }
 section.subscribe {
     width: 100%;
@@ -231,11 +224,8 @@ section.subscribe form input.sbmt, .prod1-abt button {
     cursor: pointer;
 }
 footer {
-    /* position: absolute;
-    bottom: 0; */
     background-color: rgba(165, 109, 4, 0.7);
     padding: 10px 5% 2px;
-    /* margin-top: -20px; */
     width: 90%;
     color: black;
 }
@@ -303,7 +293,6 @@ div.top_footer {
     gap: 20px;
     margin: 5% 0 0px 0;
     padding-bottom: 30px;
-    /* min-height: 100vh; */
 }
 .post1 {
     background-color: rgba(245, 245, 245, 0.241);
@@ -416,7 +405,6 @@ a.more {
 }
 .aboutUs ul {
     padding-left: 3rem;
-    /* list-style-type: disc; */
 }
 .aboutUs ul li {
     margin: 10px 0;
@@ -449,9 +437,7 @@ abbr {
 
 .backNav {
     position: absolute;
-    /* width: 20px; */
     height: 30px;
-    /* z-index: 1000; */
     background-color: rgba(255, 255, 255, 0);
     border: none;
     cursor: pointer;
@@ -681,9 +667,6 @@ q {
     div.note p {
         width: 70%;
     }
-    div.note {
-        margin-top: 35%;
-    }
     button.arrow {
         margin-top: 4.4%;
     }
@@ -833,7 +816,6 @@ q {
     .others ul.topnav.responsive li.links a.products {
         top: 62px;
     }
-
     .others ul.topnav.responsive li.links a.about {
         top: 87px;
     }
@@ -842,9 +824,6 @@ q {
     }
     li.drpdwn a img {
         width: 20px;
-    }
-    div.note {
-        margin-top: 55%;
     }
     div.note h1 {
         font-size: 2.1em;
@@ -911,7 +890,7 @@ q {
     section.subscribe form input.sbmt {
         height: 35px;
         width: 70px;
-        border-radius: 5px;
+        border-radius: 0 3px 3px 0;
     }
     footer {
         padding: 15px 3% 2px;
@@ -990,7 +969,6 @@ q {
         font-size: 0.8em;
         
     }
-
     .details ul li p img {
         width: 10px;
         height: 10px;
@@ -1007,9 +985,6 @@ q {
         margin-bottom: 10px;
         padding: 4px;
     }
-    /* .prod1-img {
-         width: 40%; 
-    } */
     .prod1-abt h1 {
         font-size: 1.2em; 
     }
@@ -1114,8 +1089,7 @@ q {
 
     .comment-form-input-container label {
         font-size: 13px;
-    }
-    
+    } 
 }
 
 
